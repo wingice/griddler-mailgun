@@ -66,7 +66,7 @@ module Griddler
         # fake headers here for now, until we can find a better way to pass the parsed
         # headers directly to Griddler
 
-        headers.to_a.collect { |header| "#{header[0]}: #{header[1]}" }.join("\n")
+        headers.to_a.collect { |header| "#{header[0]}: #{header[1]}" }.join("\r\n")
       end
 
       def param_or_header(key)
